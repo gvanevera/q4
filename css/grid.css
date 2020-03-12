@@ -1,0 +1,46 @@
+.wrapper{
+	max-width: 80%;
+	margin: 0 auto;
+}
+.container{
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"main aside"
+	"footer footer";
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 100px 80vh 50px;
+	grid-gap: 1vw;
+}
+#main{
+	grid-area: main;
+}
+#header{
+	grid-area: header;
+}
+#footer{
+	grid-area: footer;
+}
+#aside{
+	grid-area: aside;
+}
+.manditory{
+padding: 10px;
+border: 3px solid black;
+font-size: 24px;
+text-align: center;
+}
+.button{
+	border: 2px black solid;
+	border-radius: 20px;
+	background-color: black;
+	text-decoration: none;
+	color: white;
+
+}
+.button:visited{
+	color: rgb(255 0 0);
+}
+.button:hover{
+	color:rgb(0 255 255);
+}
